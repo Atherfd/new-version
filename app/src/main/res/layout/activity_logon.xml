@@ -6,6 +6,11 @@
     android:layout_height="match_parent"
     android:background="@drawable/background1"
     tools:context=".WelcomePage">
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -72,32 +77,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/username"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:layout_marginTop="296dp"
-        android:background="#FFFFFF"
+        android:background="@color/white"
         android:ems="10"
-        android:hint="  Email"
         android:inputType="textEmailAddress"
+        android:textColor="#020202"
         android:textSize="18sp"
+        android:hint="UserName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="#FFD5D2D2"
+        android:gravity="center"
+
+
+        />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/pass"
         android:layout_width="350dp"
         android:layout_height="53dp"
         android:layout_marginTop="376dp"
         android:background="@color/white"
         android:ems="10"
-        android:hint="  Password"
+        android:textColor="#020202"
+
+        android:hint="Password"
+        android:textColorHint="#FFD5D2D2"
         android:inputType="textPassword"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        />
 
     <Button
         android:id="@+id/button"

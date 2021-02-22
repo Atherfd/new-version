@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OnTimeTourismRecommender</string>
+    <string name="button">Button</string>
+<string name="URL_profile">http://10.0.2.2/login/profile.php</string>
 </resources>
